@@ -1,8 +1,5 @@
-import React from 'react'
 import ReactDOM from 'react-dom'
 import { ApplicationRoutes } from './routes'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { DashboardPage, ProfilePage } from './pages'
 
 /**
  * Getting the application routes where all the routes are defined and including it to the main dom

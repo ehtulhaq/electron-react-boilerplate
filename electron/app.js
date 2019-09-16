@@ -7,7 +7,12 @@ const { app, BrowserWindow } = require('electron')
  */
 let mainWindow
 app.on('ready', () => {
-  mainWindow = new BrowserWindow({ show: false })
+  mainWindow = new BrowserWindow({
+    show: false,
+    webPreferences: {
+      nodeIntegration: false
+    }
+  })
   mainWindow.loadURL('http://localhost:3000')
   mainWindow.maximize()
   mainWindow.show()
